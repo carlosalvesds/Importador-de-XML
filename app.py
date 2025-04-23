@@ -163,8 +163,8 @@ if uploaded_file:
             escrever_aba(df_dados, "Dados_NFC-e", colorir_cancelada=True)
             df_resumo_grouped = df_resumo_grouped[["CST", "CFOP", "Alíquota", "Valor Total", "Base de Cálculo", "ICMS"]]
         escrever_aba(df_resumo_grouped, "Resumo")
-            escrever_aba(df_status, "Status")
-            escrever_aba(df_seq, "Sequência")
+        escrever_aba(df_status, "Status")
+        escrever_aba(df_seq, "Sequência")
 
         st.success("✅ Planilha gerada com sucesso!")
         st.download_button("📥 Baixar Planilha", output.getvalue(), "Dados NFC-e.xlsx")
